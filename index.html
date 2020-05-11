@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="faza.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <title>Fazy</title>
+    <link rel="stylesheet" href="animate.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+     <script src="wow.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="prepod">
+            <img src="images/препод.png" class="lobok wow bounceInRight" data-wow-duration="1.5s" data-wow-delay="0.5s">
+            <img src="images/облачко.png" class="cloud wow slideInUp"data-wow-duration="1s" data-wow-delay="0.5s">
+
+            <div class="text wow slideInUp"data-wow-duration="1s" data-wow-delay="1.5s">
+                <p>Назови пропущенную<br> фазу на данном<br> графике</p>
+            </div>
+        </div>
+        
+        
+        
+        
+            <div class="graphic-inner">
+                <img class="graphic" src="images/ФАЗЫ.png" alt="">
+                <div class="text-inner">
+                    
+                    <p class="inic">Фаза<br> инициации</p>
+                    <p class="plan">Фаза<br> планирования</p>
+                    <p class="question">?</p>
+                    <p class="finish">Фаза<br> завершения</p> 
+                    <p class="str-level">Уровень усилий</p>
+                    <p class="time">Время</p>
+                </div>
+            </div>    
+        <div class="buttons">
+
+            <!-- <button class="spad">Фаза спада</button> -->
+            <!-- <button class="sod">Фаза содействия</button> -->
+            <!-- <button class="realization">Фаза реализации</button> -->
+            <!-- <button class="expancy">Фаза экспансии</button>*/ -->
+                    <div class="spad" data-fancybox data-src="#modal1" href="javascript:;" >
+                        <button>Фаза спада</button>
+                    </div>
+                    <div id="modal1">
+                        <img src="reaction/angry.png" class="reaction">
+                        <p class="textreaction">
+                           Неверно, подумай ещё!
+                        </p>
+                     </div>
+                    <div class="sod" data-fancybox data-src="#modal2" href="javascript:;">
+                        <button>Фаза содействия</button>
+                    </div>
+                    <div id="modal2">
+                        <p class="textreaction">
+                        Неправильный ответ!
+                        </p>
+                        <img src="reaction/sad.png" class="reaction">
+                     </div>
+                    <div class="realization" data-fancybox data-src="#modal3" href="javascript:;">
+                        <button>Фаза реализации</button>
+                    </div>
+                    <div id="modal3">
+                        <p class="textreaction">
+                        Молодец, я доволен! 
+                        </p>
+                        <img src="reaction/happy.png" class="reaction">
+                     </div>
+                    <div class="expancy" data-fancybox data-src="#modal4" href="javascript:;">
+                        <button>Фаза экспансии</button>
+                    </div>
+                    <div id="modal4">
+                        <p class="textreaction">
+                        Нет, ты ошибся!
+                        </p>
+                        <img src="reaction/angry.png" class="reaction">
+                     </div>
+
+
+        </div> 
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="main.js"></script>
+   
+    <script>
+    new WOW().init();
+    </script>
+</body>
+</html> 
